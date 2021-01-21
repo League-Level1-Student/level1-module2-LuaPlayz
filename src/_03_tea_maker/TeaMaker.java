@@ -9,9 +9,10 @@ public class TeaMaker {
 	/* Figure out how to make a cup of tea in this runner class, using the other classes below */
 	public static void main(String[] args) {
 		TeaBag Teabag= new TeaBag("Passion Fruit");
-		
-		
-		
+		Kettle kettle=new Kettle();
+		Cup cup=new Cup();
+		kettle.boil();
+		cup.makeTea(Teabag, kettle.getWater());
 		
 		
 		
